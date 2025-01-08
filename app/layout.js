@@ -23,7 +23,7 @@ export default function Root({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${josefin.className} bg-primary-950 text-primary-100 min-h-scree flex flex-col antialiased`}
+        className={`${josefin.className} bg-primary-950 text-primary-100 min-h-scree flex flex-col antialiased `}
       >
         <Header />
         <div className="flex-1 px-8 py-12">
