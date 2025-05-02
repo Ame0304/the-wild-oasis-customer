@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌴 The Wild Oasis - Guest Portal
 
-## Getting Started
+## 🔍 Project Overview
 
-First, run the development server:
+Wild Oasis Booking is a modern, user-friendly hotel booking platform built with Next.js that allows guests to discover, explore, and book stays at the Wild Oasis Hotel. This guest-facing application seamlessly integrates with the hotel's management system to provide real-time availability and booking capabilities.
+
+## 🛠 Technical Stack
+
+### Core Technologies
+
+- **Framework**: Next.js 14 with App Router
+- **Styling**: TailwindCSS
+- **State Management**: Context API for UI state
+- **Backend**: NextAuth for authentication and Supabase for data storage
+
+## ✨ Key Features
+
+### 🏨 Hotel & Cabin Discovery
+
+- Detailed cabin listings with photos, pricing, and availability
+- Real-time capacity-based filtering
+- Interactive booking calendar
+
+### 📅 Booking Management
+
+- Streamlined reservation process
+- Booking status tracking
+- Modification and cancellation capabilities
+- View past and upcoming reservations
+
+### 👤 User System
+
+- Secure authentication required for bookings
+- Profile management for faster check-in
+- Booking history access
+- Personal information updates
+
+## 🏗 Architecture & Code Organization
+
+### Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+├── .next/                  # Next.js build output
+├── app/                    # App Router pages and layouts
+│   ├── _components/       # Shared components
+│   ├── _lib/             # Utility functions
+│   ├── _styles/          # Global styles
+│   ├── about/            # About page
+│   ├── account/          # User account pages
+│   ├── api/              # API routes
+│   │   ├── auth/        # Authentication endpoints
+│   │   └── cabins/      # Cabin-related endpoints
+│   ├── cabins/          # Cabin pages
+│   ├── login/           # Authentication pages
+│   ├── fonts/           # Custom font files
+│   ├── ...      
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Key Design Patterns
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **App Router Structure**: Utilizing Next.js 14 file-based routing
+- **Route Handlers**: API endpoints for booking operations
+- **Middleware**: Authentication and route protection
+- **Error Handling**: Centralized error boundaries
+- **Loading States**: Optimized loading experience
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🚀 Performance Optimizations
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Server-side rendering for improved SEO
+- Image optimization with Next.js Image component
+- Route prefetching for faster navigation
+- Incremental Static Regeneration for cabin data
+- Optimistic updates for booking actions
