@@ -1,4 +1,6 @@
-# 🌴 The Wild Oasis - Guest Portal
+# 🌴 The Wild Oasis - Customer Booking Site
+
+[Live Demo](https://the-wild-oasis-customer-rust.vercel.app/)
 
 ## 🔍 Project Overview
 
